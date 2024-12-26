@@ -60,7 +60,7 @@
   }
 {% endstylesheet %}
 
-<div class="newsletter-block {{ block.settings | class_list }}">
+<div class="newsletter-block {{ block.settings | class_list }}" {{ block.shopify_attributes }}>
   <div class="newsletter-form">
     {%- form 'customer' -%}
       <input type="hidden" name="contact[tags]" value="newsletter">
